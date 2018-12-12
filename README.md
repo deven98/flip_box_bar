@@ -5,7 +5,7 @@ A 3D BottomNavigationBar inspired by Dribbble design by Dannniel
 
 # Demo
 
-![]("https:www.github.com/deven98/flip_box_bar/demo.gif")
+![]("https://github.com/deven98/flip_box_bar/blob/master/demo.gif")
 
 # Example Use
 
