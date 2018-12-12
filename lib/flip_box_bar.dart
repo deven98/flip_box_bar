@@ -131,4 +131,3 @@ class _FlipBarElement extends StatelessWidget {
     );
   }
 }
-

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'package:vector_math/vector_math_64.dart';
-
 class FlipBox extends StatefulWidget {
   final Widget bottomChild;
   final Widget topChild;
@@ -61,8 +59,8 @@ class _FlipBoxState extends State<FlipBox> with SingleTickerProviderStateMixin {
               alignment: Alignment.center,
               transform: Matrix4.identity()
                 ..setEntry(3, 2, 0.001)
-                ..translate(0.0, -(cos(animation.value) * (widget.height/2)),
-                    ((-widget.height/2) * sin(animation.value)))
+                ..translate(0.0, -(cos(animation.value) * (widget.height / 2)),
+                    ((-widget.height / 2) * sin(animation.value)))
                 ..rotateX(-(pi / 2) + animation.value),
               child: Container(
                 child: Center(child: widget.bottomChild),
@@ -76,19 +74,19 @@ class _FlipBoxState extends State<FlipBox> with SingleTickerProviderStateMixin {
             },
             child: animation.value < (85 * pi / 180)
                 ? Transform(
-              alignment: Alignment.center,
-              transform: Matrix4.identity()
-                ..setEntry(3, 2, 0.001)
-                ..translate(
-                  0.0,
-                  (widget.height/2) * sin(animation.value),
-                  -((widget.height/2) * cos(animation.value)),
-                )
-                ..rotateX(animation.value),
-              child: Container(
-                child: Center(child: widget.topChild),
-              ),
-            )
+                    alignment: Alignment.center,
+                    transform: Matrix4.identity()
+                      ..setEntry(3, 2, 0.001)
+                      ..translate(
+                        0.0,
+                        (widget.height / 2) * sin(animation.value),
+                        -((widget.height / 2) * cos(animation.value)),
+                      )
+                      ..rotateX(animation.value),
+                    child: Container(
+                      child: Center(child: widget.topChild),
+                    ),
+                  )
                 : Container(),
           ),
         ],
