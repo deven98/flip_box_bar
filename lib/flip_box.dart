@@ -53,7 +53,7 @@ class _FlipBoxState extends State<FlipBox> with SingleTickerProviderStateMixin {
         children: <Widget>[
           GestureDetector(
             onTap: () {
-              controller.reverse();
+              //controller.reverse();
             },
             child: Transform(
               alignment: Alignment.center,
