@@ -3,7 +3,6 @@ import 'dart:math';
 
 /// FlipBox constructs a Box consisting of two planes which can be controlled using a given Animation Controller.
 class FlipBox extends StatefulWidget {
-  
   /// The widget on the top side of the box. (Here, "top" refers to position in Stack).
   final Widget bottomChild;
 

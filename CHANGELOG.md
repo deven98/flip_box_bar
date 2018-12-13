@@ -2,3 +2,4 @@
 
 * Index fixes
 * Code cleanup
+* Added documentation
