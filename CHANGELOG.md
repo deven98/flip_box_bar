@@ -1,3 +1,4 @@
-## [0.1.1] - 12/12/18.
+## [0.2.0] - 12/12/18.
 
-* Reverse fix.
+* Index fixes
+* Code cleanup
