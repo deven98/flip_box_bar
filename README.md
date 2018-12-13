@@ -1,7 +1,7 @@
 # flip_box_bar
 
 A 3D BottomNavigationBar inspired by Dribbble design by Dannniel
-["https://dribbble.com/shots/4811135-Tab-Bar-Cube-Interaction].
+[https://dribbble.com/shots/4811135-Tab-Bar-Cube-Interaction].
 
 # Demo
 
@@ -23,3 +23,25 @@ A 3D BottomNavigationBar inspired by Dribbble design by Dannniel
                 print(newIndex);
               },
             ),
+
+# Properties
+
+### List\<FlipBarItem\> items;
+
+The items to be displayed in the BottomNavBar.
+
+### Duration animationDuration;
+
+The duration of the animation of the box flip.
+
+### ValueChanged\<int\> onIndexChanged;
+
+Callback for getting value of item selection.
+
+### int initialIndex;
+
+The initial selected index of the BottomNavBar.
+
+### double navBarHeight;
+
+The height of the BottomNavBar.
