@@ -72,6 +72,7 @@ class _FlipBoxBarState extends State<FlipBoxBar> with TickerProviderStateMixin {
               item.backColor,
               _controllers[index],
               (index) {
+                _changeValue();
                 widget.onIndexChanged(index);
               },
               index,
