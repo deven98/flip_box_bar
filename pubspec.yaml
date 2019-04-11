@@ -1,11 +1,11 @@
 name: flip_box_bar
 description: A 3D BottomNavigationBar inspired by Dribbble design by Dannniel
-version: 0.2.0
+version: 0.9.0
 author: Deven Joshi <deven9852@gmail.com>
 homepage: https://www.github.com/deven98/flip_box_bar
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.0.0 <3.0.0"
 
 dependencies:
   flutter:

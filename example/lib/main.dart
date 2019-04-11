@@ -22,12 +22,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
       body: Column(), //
       bottomNavigationBar: FlipBoxBar(
+        selectedIndex: selectedIndex,
         items: [
           FlipBarItem(
               icon: Icon(Icons.map),
@@ -56,7 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
               backColor: Colors.pinkAccent),
         ],
         onIndexChanged: (newIndex) {
-          print(newIndex);
+          setState(() {
+            selectedIndex = newIndex;
+          });
         },
       ),
     );
