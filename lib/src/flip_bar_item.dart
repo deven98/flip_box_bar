@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Template for a [FlipBoxBar] item.
 class FlipBarItem {
   /// The icon to be displayed on the sides (Can be replaced by any other widget).
   final Widget icon;
