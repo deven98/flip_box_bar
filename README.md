@@ -8,8 +8,7 @@ A 3D BottomNavigationBar inspired by Dribbble design by Dannniel
 ![](https://github.com/deven98/flip_box_bar/blob/master/demo.gif)
 
 # Example Use
-
-
+```dart
       // In Scaffold
       int selectedIndex = 0;
       
@@ -28,6 +27,7 @@ A 3D BottomNavigationBar inspired by Dribbble design by Dannniel
                 }
               },
             ),
+```     
 
 # Properties
 
@@ -58,7 +58,7 @@ modify the selectedIndex property and rebuild to animate. The reason for this mo
 it allows programmatically changing the selected index whereas the earlier version did not.
 
 ### A version of the code before 0.9.0 would look like this:
-
+```dart
         // In Scaffold
       
       bottomNavigationBar: FlipBoxBar(
@@ -74,5 +74,5 @@ it allows programmatically changing the selected index whereas the earlier versi
                 print(newIndex);
               },
             ),
-
+```
 
